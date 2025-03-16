@@ -1,7 +1,7 @@
 export type FileAction = {
   file: File;
   fileName: string;
-  fileSize: string;
+  fileSize: number;
   from: string;
   fileType: string;
   isError?: boolean;
