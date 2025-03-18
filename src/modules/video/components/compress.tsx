@@ -92,8 +92,8 @@ const CompressVideo = () => {
         ...videoFile,
         url,
         output,
-        outputBlob
-      })
+        outputBlob,
+      });
 
       setTime((oldTime) => ({ ...oldTime, startTime: undefined }));
       setStatus("converted");
@@ -111,11 +111,11 @@ const CompressVideo = () => {
     const ffmpeg = ffmpegRef.current;
     await ffmpeg.load({
       coreURL: await toBlobURL(
-        `${import.meta.env.VITE_PUBLIC_URL}/download/ffmpeg-core.js`,
+        `${import.meta.env.VITE_BASE_URL}/ffmpeg-core.js`,
         "text/javascript"
       ),
       wasmURL: await toBlobURL(
-        `${import.meta.env.VITE_PUBLIC_URL}/download/ffmpeg-core.wasm`,
+        `${import.meta.env.VITE_BASE_URL}/ffmpeg-core.wasm`,
         "application/wasm"
       ),
     });
