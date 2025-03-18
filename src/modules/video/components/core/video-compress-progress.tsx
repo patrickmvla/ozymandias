@@ -7,7 +7,7 @@ interface Props {
   progress: number;
 }
 
-export const VideoCompressProgress = ({ progress, seconds }: Props) => {
+export const VideoCompressProgress = ({ progress, seconds }: Props) => (
   <div className="flex justify-between items-center gap-2 p-0.5">
     <div className="flex-1">
       <div className="flex justify-between text-sm mb-2">
@@ -19,5 +19,5 @@ export const VideoCompressProgress = ({ progress, seconds }: Props) => {
       </div>
       <Progress value={progress} />
     </div>
-  </div>;
-};
+  </div>
+);

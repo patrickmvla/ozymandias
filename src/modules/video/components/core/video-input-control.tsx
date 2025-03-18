@@ -21,7 +21,7 @@ export const VideoInputControl = ({
   disable,
   onVideoSettingsChange,
   videoSettings,
-}: Props) => {
+}: Props) => (
   <motion.div
     layout
     initial={{ scale: 0.8, opacity: 0 }}
@@ -112,8 +112,8 @@ export const VideoInputControl = ({
         </>
       )}
     </div>
-  </motion.div>;
-};
+  </motion.div>
+);
 
 const quality: { label: string; value: QualityType }[] = [
   { label: "High", value: QualityType.High },

@@ -7,7 +7,7 @@ interface Props {
   onClear: () => void;
 }
 
-export const VideoInputDetails = ({ onClear, videoFile }: Props) => {
+export const VideoInputDetails = ({ onClear, videoFile }: Props) => (
   <motion.div
     layout
     initial={{ scale: 0.8, opacity: 0 }}
@@ -34,5 +34,5 @@ export const VideoInputDetails = ({ onClear, videoFile }: Props) => {
         <p>{bytesToSize(videoFile.fileSize)}</p>
       </div>
     </div>
-  </motion.div>;
-};
+  </motion.div>
+);
