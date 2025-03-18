@@ -7,7 +7,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
-import { QualityType, VideoFormats, VideoInputSettings } from "@/lib/types";
+import { QualityType, VideoFormats, VideoInputSettings } from "@/utils/types";
 
 import { motion } from "framer-motion";
 

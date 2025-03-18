@@ -1,5 +1,5 @@
 import { Progress } from "@/components/ui/progress";
-import { formatTime } from "@/lib/convert";
+import { formatTime } from "@/utils/convert";
 import { Loader } from "lucide-react";
 
 interface Props {

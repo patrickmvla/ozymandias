@@ -7,8 +7,8 @@ import {
   QualityType,
   VideoFormats,
   VideoInputSettings,
-} from "@/lib/types";
-import convertFile from "@/lib/convert";
+} from "@/utils/types";
+import convertFile from "@/utils/convert";
 import { toast } from "sonner";
 import { toBlobURL } from "@ffmpeg/util";
 
@@ -23,7 +23,7 @@ const CompressVideo = () => {
     "notStarted" | "converted" | "compressing"
   >("notStarted");
   const [videoSettings, setVideoSettings] = useState<VideoInputSettings>({
-    quality: QualityType.Height,
+    quality: QualityType.High,
     videoType: VideoFormats.MP4,
     customEndTime: 0,
     customStartTime: 0,
