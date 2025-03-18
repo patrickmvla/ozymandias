@@ -32,7 +32,7 @@ export const reduceSize = (
   ).toFixed(2);
 
   return {
-    sizeReduced: bytesToSIze(adjustedSizeInBytes),
+    sizeReduced: bytesToSize(adjustedSizeInBytes),
     percentage: percentageReduction,
   };
 };

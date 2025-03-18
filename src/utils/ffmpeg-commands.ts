@@ -37,7 +37,7 @@ export const customCompressionCommand = (
   const inputType = getFileExtension(input);
 
   if (inputType === "mp4") {
-    return getMp4ToMp4Command(input, output, videoSettings);
+    return getMp4ToMp4Command(input, output);
   } else {
     switch (videoSettings.videoType) {
       case VideoFormats.MP4:
@@ -61,7 +61,7 @@ export const customCompressionCommand = (
 const getMp4ToMp4Command = (
   input: string,
   output: string,
-  videoSettings: VideoInputSettings
+ 
 ) => {
   const ffmpegCommand = [
     "-i",
